@@ -1,0 +1,399 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1px 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.logo span {
+    color:  #155b31;    /* Warna kuning */
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.navlist li {
+    margin: 0 10px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.navlist a:hover {
+    background-color:  #155b31;    /* Warna kuning */
+    color: #fff;
+    border-radius: 3px;
+}
+
+.bx-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Home Section Styles */
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.background-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+    z-index: -1; 
+}
+
+.home-text {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.home h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.home h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.home p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* About Section Styles */
+.about {
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about h2 span {
+    color:  #155b31;    /* Warna kuning */
+}
+
+.about h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Services Section Styles */
+.services {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.main-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.s-icons {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.services h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.services p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.btn {
+    display:initial;
+    background-color: #155b31;
+    color: #fff; 
+    font-size: 1rem;
+    text-decoration:none;
+    border-radius: 100px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color:  #062e16;    /* Warna kuning */
+    color: #474747;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.port {
+    background-color: #232323;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    transition: all 0.3s ease;
+    flex-basis: calc(33.33% - 20px);
+    text-align: left;
+}
+
+.port img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.port .text {
+    padding: 10px 0;
+}
+
+.port h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.port p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.contact h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form button {
+    background-color: #155b31;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #155b31;
+    /* Warna kuning */
+    color: #fff;
+}
+
+/* Footer Section Styles */
+footer {
+    background-color: #fff;
+    color: #2a2a2a;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navlist {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #232323;
+        text-align: center;
+        z-index: 999;
+        flex-direction: column;
+    }
+
+    .navlist.active {
+        display: flex;
+    }
+
+    .navlist li {
+        margin: 15px 0;
+    }
+
+    
+    .logo {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 20px;
+    }
+    
+    .logo span {
+        color:  #155b31;    /* Warna kuning */
+    }
+
+    .port {
+        background-color: #232323;
+        padding: 100px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        transition: all 0.3s ease;
+        flex-basis: calc(33.33% - 20px);
+        text-align: left;
+    }
+    
+    .port p {
+        font-size: 1.5rem;
+        line-height: 1;
+        text-align: justify;
+    }
+
+    .bx-menu {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .home h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+}
